@@ -1,26 +1,32 @@
 # Getting Started with the Bookshelf app
 
-This is an attepmt to a futuristic book searching engine. Enjoy!
+This is an attepmt to a responsive futuristic book searching engine. Enjoy!
 
-The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Functionality:
+* Search for books by title, author etc.
+* During network problems an Error message will occure. 
 
 ## Frameworks
 
 * React App
 * Node.js
 
+## API
+
+Open library
+API client- Axios
+
 ## Structure
 
 ### `public`
-
+Files within the folder, reads the instructions from the JS and HTML files for using their assets.
 ### `src `
-
+ Contains the JS and CSS files.Those are processed by webpack.
 #### `components `
  Stores the projects components that in turn are provided with their own folders, containing both the .js file and css file. 
 
  #### `images` 
- Stores the background image and the "book- not-valid" image.
+ Stores the webapplications images.
 
 
 ## Run application
