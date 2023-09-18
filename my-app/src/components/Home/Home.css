@@ -1,0 +1,32 @@
+.home-content {
+   
+  background-image: url("../../images/background-nr1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+style{
+  margin: 0;
+  padding: 0;
+}
+.greeting{
+ /* -webkit-text-stroke-color: #760cf01f;
+  -webkit-text-stroke-width: thin;*/
+  position: absolute;
+  text-align: center;
+  font-family: fantasy;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: popup .1s 1s ease forwards;
+}
+.textEnd{
+  font-family: -webkit-body;
+}
+@keyframes popup {
+ from {opacity: 0; }
+ to{opacity: 1; }
+}  
