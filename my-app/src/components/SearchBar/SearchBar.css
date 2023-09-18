@@ -47,8 +47,8 @@
     background-color: #27164f;
     display: grid;
     box-sizing: border-box;
-    /*overflow: auto;*/
     position: absolute;
+    cursor: pointer;
     margin: 25px auto;
     width: 100%;
     padding: 0px 5rem;

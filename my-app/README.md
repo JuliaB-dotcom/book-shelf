@@ -4,6 +4,7 @@ This is an attepmt to a responsive futuristic book searching engine. Enjoy!
 
 Functionality:
 * Search for books by title, author etc.
+* Every book has its own description with further information.
 * During network problems an Error message will occure. 
 
 ## Frameworks
