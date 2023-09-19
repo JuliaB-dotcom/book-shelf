@@ -24,6 +24,7 @@ const BookList = ({ book =[]}) => {
       
           if (!cover) {
             cover = noCover;
+            console.log(cover);
           }
             return (
               <>
