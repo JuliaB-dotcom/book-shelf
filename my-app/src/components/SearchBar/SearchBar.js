@@ -23,12 +23,11 @@ const SearchBar= () => {
       }).catch((err) => {
         //console.log(err)
         if (err.res) {
-          console.error('Response Error', err.res.data)
-          setError('Error: ' + err.res.data.message)
-        } else if (err.res) {
+          //valid requets but no response
           console.error('Request Error', err.res)
           setError('Error: No response from server')
         } else {
+          //request setup error
           console.error('Error ', err.message)
           setError('Error: ' + err.message)
         }
