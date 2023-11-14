@@ -16,19 +16,27 @@ const SearchBar= () => {
   }
   const searchBook = () => {
     console.log('searching')
-    axios.get('https://openlibrary.org/search.json?q=' + search + '&mode=everything')
+    axios.get('https://openlibrary.org/search.' + search + '&mode=everything') //json?q=
       .then((res) => {
         console.log(res.data.docs)
         setData(res.data.docs)
       }).catch((err) => {
-        console.log(err)
-        setError(err)
+        //console.log(err)
+        if (err.res) {
+          console.error('Response Error', err.res.data)
+          setError('Error: ' + err.res.data.message)
+        } else if (err.res) {
+          console.error('Request Error', err.res)
+          setError('Error: No response received from server')
+        } else {
+          console.error('Error ', err.message)
+          setError('Error: ' + err.message)
+        }
+        
       })
     
   }
-  if (error) {
-    return <pre>{JSON.stringify }</pre>
-  }
+  
   return (
     <> 
       <div className = 'search-bar'>
@@ -40,7 +48,8 @@ const SearchBar= () => {
                />
             <button className ='flex flex-sc' onClick={searchBook} >
               <FaSearch size = {32} className="searchBtn" />
-            </button>
+          </button>
+          {error && <div className="error-message"> {error}</div>}
             </div>
        
         <div className="container">
