@@ -27,7 +27,7 @@ const SearchBar= () => {
           setError('Error: ' + err.res.data.message)
         } else if (err.res) {
           console.error('Request Error', err.res)
-          setError('Error: No response received from server')
+          setError('Error: No response from server')
         } else {
           console.error('Error ', err.message)
           setError('Error: ' + err.message)
