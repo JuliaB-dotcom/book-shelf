@@ -56,7 +56,6 @@ const SearchBar= () => {
             <BookList book={bookData} />
           }
           </div>
-        
       </div>
 
       
