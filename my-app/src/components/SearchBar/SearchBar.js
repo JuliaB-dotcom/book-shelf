@@ -16,7 +16,7 @@ const SearchBar= () => {
   }
   const searchBook = () => {
     console.log('searching')
-    axios.get('https://openlibrary.org/search.' + search + '&mode=everything') //json?q=
+    axios.get('https://openlibrary.org/search.json?q=' + search + '&mode=everything') 
       .then((res) => {
         console.log(res.data.docs)
         setData(res.data.docs)
