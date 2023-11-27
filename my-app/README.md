@@ -1,6 +1,6 @@
 # Getting Started with the Bookshelf app
 
-This is an attepmt to finish a responsive futuristic book searching engine that was a part of a task long ago. Enjoy!
+This is an attepmt to finish a responsive futuristic book searching engine that was a part of a task. Enjoy!
 
 Functionality:
 * Search for books by title, author etc.
