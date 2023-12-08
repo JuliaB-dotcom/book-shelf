@@ -30,7 +30,7 @@ const BookList = ({ book =[]}) => {
               <>
                 
                 <div className="card" data-testid= 'list-test1' onClick={() => { setShow(true); setItem(doc) }}>
-                  <img src={cover} alt="" />
+                  <img src={cover} alt="No image found" />
                   <div className="bottom">
                       <h3 className="title">{doc.title} </h3>
                       <h4 className="author">by {doc.author_name}</h4>
