@@ -1,5 +1,5 @@
 .home-content {
-
+   
   background-image: url("../../images/background-nr1.jpg");
   background-size: cover;
   background-position: center;
@@ -7,15 +7,13 @@
   height: 100vh;
 }
 
-style {
+style{
   margin: 0;
   padding: 0;
 }
-
-.greeting {
-  /* Might use this color
-  -webkit-text-stroke-color: #760cf01f;
-  -webkit-text-stroke-width: thin; */
+.greeting{
+ /* -webkit-text-stroke-color: #760cf01f;
+  -webkit-text-stroke-width: thin;*/
   position: absolute;
   text-align: center;
   font-family: fantasy;
@@ -25,17 +23,10 @@ style {
   opacity: 0;
   animation: popup .1s 1s ease forwards;
 }
-
-.textEnd {
+.textEnd{
   font-family: -webkit-body;
 }
-
 @keyframes popup {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
+ from {opacity: 0; }
+ to{opacity: 1; }
+}  
