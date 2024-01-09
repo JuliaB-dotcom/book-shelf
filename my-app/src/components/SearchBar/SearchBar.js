@@ -6,7 +6,7 @@ import BookList from "../BookList/BookList";
 
 import './SearchBar.css';
 
-const SearchBar= () => {
+const SearchBar = () => {
   const [search, setSearch] = useState("");
   const [bookData, setData] = useState([]);
   const [error, setError] = useState('');
@@ -16,7 +16,7 @@ const SearchBar= () => {
   }
   const searchBook = () => {
     console.log('searching')
-    axios.get('https://openlibrary.org/search.json?q=' + search + '&mode=everything') 
+    axios.get('https://openlibrary.org/search.json?q=' + search + '&mode=everything')
       .then((res) => {
         console.log(res.data.docs)
         setData(res.data.docs)
@@ -31,34 +31,34 @@ const SearchBar= () => {
           console.error('Error ', err.message)
           setError('Error: ' + err.message)
         }
-        
+
       })
-    
+
   }
-  
+
   return (
-    <> 
-      <div className = 'search-bar'>
-       
-  
+    <>
+      <div className='search-bar'>
+
+
         <div className="search">
-            <input type ="text" placeholder = "Search"
-              value = {search} onChange = {handleSearch}
-               />
-            <button className ='flex flex-sc' onClick={searchBook} >
-              <FaSearch size = {32} className="searchBtn" />
+          <input type="text" placeholder="Search"
+            value={search} onChange={handleSearch}
+          />
+          <button className='flex flex-sc' onClick={searchBook} >
+            <FaSearch size={32} className="searchBtn" />
           </button>
           {error && <div className="error-message"> {error}</div>}
-            </div>
-       
+        </div>
+
         <div className="container">
           {
             <BookList book={bookData} />
           }
-          </div>
+        </div>
       </div>
 
-      
+
     </>
   )
 }

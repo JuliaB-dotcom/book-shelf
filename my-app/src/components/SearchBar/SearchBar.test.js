@@ -1,4 +1,4 @@
-import { render, fireEvent, getByLabelText } from '@testing-library/react';
+import { render, getByLabelText } from '@testing-library/react';
 import SearchBar from './SearchBar';
 
 test('Select input', async () => {
@@ -6,5 +6,5 @@ test('Select input', async () => {
   const check = getByLabelText();
   console.warn(await response.api());
   expect('hello').toEqual('hello');
-  
+
 });
