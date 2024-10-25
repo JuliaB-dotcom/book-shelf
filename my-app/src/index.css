@@ -89,6 +89,9 @@ top: -126px;
 div.overlay-inner{
   height: 350px;
 }
+button.close{
+  right: 3rem;
+}
 body{
 font-size: 1.2rem;
 }
