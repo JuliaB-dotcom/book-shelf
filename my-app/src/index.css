@@ -64,3 +64,33 @@ input{
   text-transform: uppercase;
   padding: 18px 0 24px 0;
 }
+@media (max-width: 1000px){
+  div.greeting{
+    top: 19%;
+  }
+  div.search-bar{
+    margin-top: -30%;
+    margin-left: 12%;
+    width: 60%;
+}
+div.container{
+  margin-left: -112px;
+  width: 100%;
+  padding: 0px 2rem;
+}
+div.card{
+  width: 75%;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+div.overlay{
+top: -126px;
+}
+div.overlay-inner{
+  height: 350px;
+}
+body{
+font-size: 1.2rem;
+}
+
+}
